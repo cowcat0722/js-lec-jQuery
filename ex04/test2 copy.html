@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">이벤트 두번째 버전</h1>
+    <hr>
+    <button id="btn-change">홍길동</button>
+
+    <script>
+        let btn = document.querySelector("#btn-change")
+        btn.addEventListener("mouseover", changeTitle);
+
+        function changeTitle(e) {
+            console.log(e);
+            // alert(e.target.innerHTML);
+            let title = document.querySelector("#title"); // class 는 .으로 찾고 id는 #으로 찾음
+            title.innerHTML = e.target.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

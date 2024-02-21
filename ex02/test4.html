@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 함수
+        function add(x, y) {
+            console.log(x + y);
+        }
+        add(1, 2);
+
+        // 익명 함수
+        let m1 = function (x, y) {
+            console.log(x + y);
+        };
+        m1(1, 2);
+
+        // 람다식 - return이 없기 때문에 그냥 식 - 쌤만 이렇게 구분을 하는 것임
+        let m2 = (x, y) => {
+            console.log(x + y);
+        };
+        m2(1, 2);
+
+        // 람다 표현식(expression) - return이 있는 것이 표현식
+        let m3 = (x, y) => x + y;
+        let r3 = m3(1, 2);
+        console.log(`r3 = ${r3}`);
+    </script>
+</body>
+
+</html>

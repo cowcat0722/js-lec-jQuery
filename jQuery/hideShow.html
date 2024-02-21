@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </script>
+</head>
+
+<body>
+
+    <p>Hide 버튼 누르면 사라지고, Show 버튼 누르면 생김</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script>
+        function h() {
+            $("p").hide();
+        }
+        function s() {
+            $("p").show();
+        }
+        $("#hide").click(h);
+        $("#show").click(s);
+    </script>
+</body>
+
+</html>
